@@ -20,20 +20,24 @@ body {
 .Maincontainer {
   background: #f5f8ff;
   border-radius: 40px;
-  margin: 10px;
+  overflow-x: hidden;
   margin-top: 40px;
-  padding: 15px;
+}
+.notearea {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-flex;
+
 }
 
-.BoxPacket {
+.row {
   display: flex;
   justify-content: center;
 }
 
 .box {
-  position: relative;
-  min-width: 0;
-  width: 180px;
+  width: 170px;
   backdrop-filter: blur(25px) saturate(00%);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 12px;
@@ -74,7 +78,7 @@ body {
 
 .FinalBtn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 40px;
   margin-left: 6%;
   margin-right: 6%;
@@ -112,19 +116,17 @@ body {
 
 .DashboradFooterImg img {
   width: 250px;
-
 }
 
 .DashboradFooterText {
   margin-left: 40px;
   border-left: #00a65a 5px solid;
   padding-left: 20px;
-
 }
 
 .timebox {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .TimeCounter {
@@ -132,6 +134,9 @@ body {
   height: 50px;
   font-weight: 800;
   font-size: 20px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -154,5 +159,19 @@ body {
     border-top: #00a65a 5px solid;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .TimeCounter{
+    text-align: center;
+    font-size: 15px;
+  }
+  .notearea{
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .timebox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
